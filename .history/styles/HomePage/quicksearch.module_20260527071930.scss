@@ -1,0 +1,24 @@
+.quicksearch{
+  width: 100%;
+  height: auto;
+}
+
+.qs__container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.top__sec{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.ts__span{
+  font-size: var(--small-font-size);
+  font-family: var(--medium-font);
+}

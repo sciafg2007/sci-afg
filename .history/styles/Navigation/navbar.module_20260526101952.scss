@@ -1,0 +1,17 @@
+.navigation {
+  width: 100%;
+  height: auto;
+  padding: 1.25rem 0;
+}
+
+.nav__logo {
+  svg {
+    width: 100px;
+    height: auto;
+
+    path {
+      fill: var(--darkblue) !important;
+      transition: all 0.5s ease;
+    }
+  }
+}

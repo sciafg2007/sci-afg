@@ -1,0 +1,139 @@
+.ph__section {
+  padding: 10rem 0 2rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.linkhero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ls__left {
+  font-family: var(--medium-font);
+  color: var(--darkblue);
+  a {
+    color: var(--darkblue);
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .property {
+    color: var(--text-color);
+  }
+}
+
+.ls__right {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--darkblue);
+  color: var(--darkblue);
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  position: relative;
+
+  svg {
+    path {
+      stroke: var(--darkblue);
+      transition: all 0.5s ease;
+    }
+  }
+
+  &:hover {
+    background-color: var(--darkblue);
+    color: white;
+
+    svg {
+      path {
+        stroke: white;
+      }
+    }
+  }
+}
+
+.copytoast {
+  position: absolute;
+  top: calc(100% + 6px);
+  background-color: rgb(17, 40, 74, 0.6);
+  color: white;
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  font-size: var(--small-font-size);
+  padding: 0.2rem 0.5rem 0.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  word-wrap: none;
+  width: max-content;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.image__wrapper {
+  width: 100%;
+  aspect-ratio: 900/540;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.buttoner {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.button__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  width: 52px;
+  height: 52px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: 48px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  pointer-events: all;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: auto;
+
+    path {
+      stroke: white;
+      stroke-width: 1.25px;
+    }
+  }
+}
+
+.button2 {
+  svg {
+    transform: rotate(180deg);
+  }
+}

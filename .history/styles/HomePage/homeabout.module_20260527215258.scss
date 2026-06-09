@@ -1,0 +1,47 @@
+.home__about{
+  width: 100%;
+  height: auto;
+}
+
+.ha__container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hp__h3 {
+  font-weight: 200;
+  font-family: var(--lora-font);
+  font-size: var(--50-font-size);
+  letter-spacing: -2%;
+  color: var(--darkblue);
+  line-height: 1.15;
+  width: 60%;
+}
+
+.ha__bottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.hab__image{
+  width: 450px;
+  aspect-ratio: 1;
+  position: relative;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.hab__right{
+  width: 45%;
+  margin-top: 1rem;
+}
+
+.hab__p{
+  line-height: 1.4;
+}

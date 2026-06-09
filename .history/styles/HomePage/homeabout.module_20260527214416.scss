@@ -1,0 +1,35 @@
+.home__about{
+  width: 100%;
+  height: auto;
+}
+
+.ha__container{
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.hp__h3 {
+  font-weight: 200;
+  font-family: var(--lora-font);
+  font-size: var(--50-font-size);
+  letter-spacing: -2%;
+  color: var(--darkblue);
+  line-height: 1.15;
+  width: 60%;
+}
+
+.ha__bottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.hab__image{
+  width: 350px;
+  aspect-ratio: 1;
+  position: relative;
+}
+

@@ -1,0 +1,18 @@
+.op__section{
+  width: 100%;
+  height: auto;
+  padding: 4rem 0 7rem;
+}
+
+.op__container{
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.opc__bottom{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: ;
+}

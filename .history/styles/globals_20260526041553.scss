@@ -1,0 +1,169 @@
+/*=============== VARIABLES SCSS ===============*/
+:root {
+  --gold: rgb(210, 161, 114);
+  --black: #151515;
+  --text-color: rgba(15, 15, 15, 0.6);
+  --light-grey: rgba(15, 15, 15, 25);
+  --body-color: #ffffff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+
+  --70-font-size: 4.5rem;
+  --60-font-size: 3.75rem;
+  --50-font-size: 3.25rem;
+  --40-font-size: 2.5rem;
+  --30-font-size: 2rem;
+  --20-font-size: 1.4rem;
+  --normal-font-size: 1.05rem;
+  --small-font-size: 0.8rem;
+  --smaller-font-size: 0.7rem;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1088px) {
+  :root {
+    --70-font-size: 3.75rem;
+    --60-font-size: 3.25rem;
+    --50-font-size: 2.75rem;
+    --40-font-size: 2rem;
+    --30-font-size: 1.5rem;
+    --20-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.7rem;
+    --smaller-font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  :root {
+    --70-font-size: 3.25rem;
+    --60-font-size: 2.75rem;
+    --50-font-size: 2.25rem;
+    --40-font-size: 1.75rem;
+    --30-font-size: 1.35rem;
+    --20-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.65rem;
+    --smaller-font-size: 0.55rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: auto;
+  height: auto;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--regular-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.section {
+  padding: 7rem 0 3.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 6.5rem 0 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section {
+    padding: 5rem 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .container {
+    max-width: 100%;
+    margin: 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .container {
+    max-width: 100%;
+    margin: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .container {
+    max-width: 100%;
+    margin: 0 1.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    max-width: 100%;
+    margin: 0 1rem;
+  }
+}
+
+//Lenis Scroll
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

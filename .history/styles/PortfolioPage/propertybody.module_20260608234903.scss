@@ -1,0 +1,16 @@
+.pb__section{
+  width: 100%;
+  padding: 5rem 0 7rem;
+  position: relative;
+}
+
+.pb__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.pbc__left{
+  width: 70%;
+  height: auto;
+}

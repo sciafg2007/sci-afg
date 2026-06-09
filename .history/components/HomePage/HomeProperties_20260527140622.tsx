@@ -1,0 +1,24 @@
+"use client";
+
+import React from 'react'
+import { useT } from "next-i18next/client";
+import styles from "../../styles/HomePage/homeproperties.module.scss"
+
+const HomeProperties = () => {
+  const { t } = useT();
+
+  return (
+    <div className={`section ${styles.hp__section}`}>
+      <div className={`container ${styles.hp__container}`}>
+        <h3 className={styles.hp__h3}>{t("home:hprops")}</h3>
+      </div>
+      <div className={styles.hp__swiper}>
+        <div className={styles.slider}>
+
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default HomeProperties

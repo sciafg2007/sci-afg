@@ -1,0 +1,18 @@
+"use client";
+
+import React from 'react'
+import { useT } from 'next-i18next/client'
+import styles from "../../styles/AboutPage/servicessection.module.scss"
+
+const ServicesSection = () => {
+  const {t}= use
+  return (
+    <div className={styles.ss__section}>
+      <div className={`container ${styles.ss__container}`}>
+
+      </div>
+    </div>
+  )
+}
+
+export default ServicesSection

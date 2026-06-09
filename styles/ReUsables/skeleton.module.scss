@@ -1,0 +1,91 @@
+// components/SkeletonLoader.module.scss
+
+.skeleton {
+  background-color: #e0e0e0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  // // Dark mode support
+  // @media (prefers-color-scheme: dark) {
+  //   background-color: #2a2a2a;
+  // }
+}
+
+// Responsive height support using CSS variables
+.responsive {
+  // Tablet breakpoint (< 1024px)
+  @media (max-width: 1023px) {
+    height: var(--tablet-height, inherit) !important;
+  }
+
+  // Mobile breakpoint (< 768px)
+  @media (max-width: 630px) {
+    height: var(--mobile-height, inherit) !important;
+  }
+}
+
+// Pulse animation (default)
+.pulse {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+// Wave animation (shimmer effect)
+.wave {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    animation: skeleton-wave 1.5s ease-in-out infinite;
+
+    // @media (prefers-color-scheme: dark) {
+    //   background: linear-gradient(
+    //     90deg,
+    //     transparent,
+    //     rgba(255, 255, 255, 0.1),
+    //     transparent
+    //   );
+    // }
+  }
+}
+
+@keyframes skeleton-wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+// Optional: Additional utility classes
+.skeleton-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}

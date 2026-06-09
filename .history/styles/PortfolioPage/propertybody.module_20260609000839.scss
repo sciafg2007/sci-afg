@@ -1,0 +1,84 @@
+.pb__section{
+  width: 100%;
+  padding: 4rem 0 7rem;
+  position: relative;
+}
+
+.pb__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.pbc__left{
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.pnames{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.p__name{
+  font-weight: 200;
+  font-family: var(--medium-font);
+  color: var(--darkblue);
+  font-size: var(--40-font-size);
+}
+
+.p__location{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  svg{
+    width: 24px;
+    height: auto;
+  }
+}
+
+.location{
+  font-family: var(--medium-font);
+  color: var(--darkblue);
+  font-size: calc(var(--20-font-size));
+}
+
+.pmid{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+
+  p{
+    line-height: 1.4;
+  }
+}
+
+.pbottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.action__select{
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  display: flex;
+  align-items: flex-end;
+  gap: 1.75rem
+}
+
+.action{
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: all 0.5s ease;
+  bor
+}

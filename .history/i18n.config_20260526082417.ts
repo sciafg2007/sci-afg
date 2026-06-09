@@ -1,0 +1,11 @@
+import type { I18nConfig } from 'next-i18next/proxy'
+
+const i18nConfig: I18nConfig = {
+  supportedLngs: ['fr', 'en'],
+  fallbackLng: 'fr',
+  defaultNS: 'common',
+  ns: ['common', 'home', 'about', 'contact'],
+  hideDefaultLocale: false
+}
+
+export default i18nConfig

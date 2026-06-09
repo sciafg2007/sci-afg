@@ -1,0 +1,27 @@
+.navigation {
+  width: 100%;
+  height: auto;
+  padding: 1.25rem 0;
+}
+
+.nav__inner{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.nav__logo {
+  svg {
+    width: 100px;
+    height: auto;
+
+    path {
+      fill: white !important;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.navbar{
+  
+}

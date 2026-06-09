@@ -1,0 +1,29 @@
+.process{
+  width: 100%;
+  height: auto;
+}
+
+.process__container{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.process__image{
+  width: 50%;
+  aspect-ratio: 660/780;
+  position: relative;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.process__right{
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+

@@ -1,0 +1,40 @@
+.button {
+  font-family: var(--medium-font);
+  background-color: var(--background);
+  color: var(--color);
+  padding: 1rem 2rem 1.1rem;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.text__section {
+  height: 21.6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ts__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.chevron {
+  width: 14px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.chev__wrap{
+  display: flex;
+  gap: 0;
+  align-items: center;
+
+  svg{
+    width: 7px;
+    height: auto;
+  }
+}

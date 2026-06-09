@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 6rem 0 1.5rem;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.ft__span {
+  font-family: var(--bold-font);
+  color: var(--blue);
+  text-transform: uppercase;
+  font-size: calc(var(--small-font-size));
+  letter-spacing: 20%;
+}
+
+.ft__links {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid #707e92;
+  position: relative;
+}
+
+.f__link {
+  color: white;
+  font-size: var(--40-font-size);
+  font-family: var(--lora-font);
+  padding: 0.8rem 0 0.8rem 2rem;
+  border-bottom: 1px solid #707e92;
+
+  &:hover {
+    .f__span {
+      opacity: 0.5;
+    }
+  }
+
+  &:nth-last-child(-n + 3) {
+    border-bottom: none;
+  }
+
+  .f__span {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+}
+
+.separator {
+  width: 1px;
+  height: 100%;
+  background-color: #707e92;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer__mid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fm__right {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.fm__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.other__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  a {
+    color: white;
+    text-decoration: underline;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.footer__bottom {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.fb__left {
+  svg {
+    width: 140px;
+    height: auto;
+
+    path {
+      fill: white;
+    }
+  }
+}
+
+.fb__right{
+  width: 50%;
+  display: flex;
+  justify-content: sp;
+}

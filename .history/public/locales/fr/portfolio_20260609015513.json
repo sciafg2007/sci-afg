@@ -1,0 +1,15 @@
+{
+  "hero": "Nos Offres Immobilières",
+  "herotext": "Trouvez un logement ou local occupable immédiatement, à des tarifs transparents et sans commission.",
+  "filtres": "Filtres",
+  "filterby": "Trier par",
+  "mostrecent": "Plus récents",
+  "priceup": "Prix (croissant)",
+  "pricedown": "Prix (décroissant)",
+  "clear": "Effacer les filtres",
+  "apply": "Appliquer les filtres",
+  "nfheader": "Aucun bien ne correspond à vos filtres.",
+  "nftext": "Nous n’avons trouvé aucune annonce correspondant à vos critères pour le moment. Nos conseillers peuvent lancer une recherche personnalisée.",
+  "nfcontact": "Contacter un conseiller",
+  "similar": ""
+}

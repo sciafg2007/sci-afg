@@ -1,0 +1,17 @@
+{
+  "hero": "Our Property Listings",
+  "herotext": "Find a home or commercial premises available immediately, with transparent pricing and no commission.",
+  "filtres": "Filter",
+  "filterby": "Filter by",
+  "mostrecent": "Most recent",
+  "priceup": "Price (ascending)",
+  "pricedown": "Price (descending)",
+  "clear": "Clear filters",
+  "apply": "Apply filters",
+  "nfheader": "No properties match your filters.",
+  "nftext": "We didn’t find any listings that match your criteria right now. Our advisors can search for other matches or propose similar options.",
+  "nfcontact": "Contact an advisor",
+  "similar": "Similar properties",
+  "language": "Language(s)",
+  "message": "Hello, I am interested in {{properter}}. Can you share details?"
+}

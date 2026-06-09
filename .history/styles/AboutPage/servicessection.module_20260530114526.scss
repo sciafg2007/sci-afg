@@ -1,0 +1,37 @@
+.ss__section{
+  padding: 3rem 0;
+  width: 100%;
+  height: auto;
+}
+
+.ss__container{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.service__wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.ser__h3{
+  font-weight: 200;
+  font-family: var(--lora-font);
+  font-size: var(--40-font-size);
+  letter-spacing: -2%;
+  color: var(--darkblue);
+  line-height: 1.15;
+}
+
+.ser__right{
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}

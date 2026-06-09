@@ -1,0 +1,12 @@
+import HomePageWrapper from "./HomePage/HomePageWrapper";
+import AboutPageWrapper from "./AboutPage/AboutPageWrapper";
+import PrivacyPageWrapper from "./PrivacyPage/PrivacyPageWrapper";
+import ServicesPageWrapper from "./ServicesPage/ServicesPageWrapper";
+import ContactPageWrapper from "./ContactPage/ContactPageWrapper";
+
+export {
+  HomePageWrapper,
+  AboutPageWrapper,
+  PrivacyPageWrapper,
+  ServicesPageWrapper,
+};

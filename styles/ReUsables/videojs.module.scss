@@ -1,0 +1,30 @@
+.video__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video__wrapper :global(.video-js) {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
+.video__wrapper :global(video) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* poster fix */
+.video__wrapper :global(.vjs-poster) {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center;
+
+  img{
+    object-fit: cover;
+  }
+}

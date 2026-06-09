@@ -1,0 +1,30 @@
+.prefooter{
+  padding: 7rem 0 !important;
+  width: 100%;
+}
+
+.pf__container{
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.pr__images{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+}
+
+.images{
+  position: relative;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.imgOne{
+  width: 25vw;
+  as
+}

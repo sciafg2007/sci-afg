@@ -1,0 +1,45 @@
+.navigation {
+  width: 100%;
+  height: auto;
+  padding: 1.25rem 0;
+}
+
+.nav__inner {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.nav__logo {
+  svg {
+    width: 100px;
+    height: auto;
+
+    path {
+      fill: white !important;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.navbar {
+  width: max-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: var(--normal-font-size);
+  a {
+    color: white;
+  }
+}

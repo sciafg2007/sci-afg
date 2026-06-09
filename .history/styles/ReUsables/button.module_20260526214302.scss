@@ -1,0 +1,56 @@
+.button {
+  font-family: var(--medium-font);
+  background-color: var(--background);
+  color: var(--color);
+  padding: 1rem 2rem 1.1rem;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: var(--backhover);
+    color: var(--colorhover);
+
+    .text__section {
+      .ts__wrapper {
+        transform: translateY(-50%);
+      }
+    }
+
+    .chevron {
+      svg {
+        path {
+          fill: var(--colorhover);
+        }
+      }
+    }
+  }
+}
+
+.text__section {
+  height: 21.6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ts__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transform: none;
+  transition: transform 0.5s ease;
+}
+
+.chevron {
+  svg {
+    width: 8px;
+    height: auto;
+
+    path {
+      fill: var(--color);
+      transition: all 0.5s ease;
+    }
+  }
+}
