@@ -135,13 +135,10 @@
 }
 
 @media screen and (max-width: 550px) {
-  .hero__main {
+  .hero__main{
     width: 95%;
     position: relative;
-    padding-top: 11rem;
-    transform: none;
-    left: 0;
-    top: 0;
+    padding-top: ;
   }
 
   .hero__h2 {
@@ -153,15 +150,11 @@
   }
 
   .hero__bottom {
-    bottom: 0;
-    transform: none;
-    left: 0;
-    top: 0;
-    position: relative;
+    bottom: 0.75rem;
   }
 
   .hero__marquee {
-    padding: 0.2rem 0 1.75rem;
+    padding: 0.2rem 0 0.65rem;
   }
 
   .hm__one {
@@ -172,14 +165,6 @@
     white-space: nowrap;
   }
 
-  .background__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    z-index: 0;
-  }
-
   .homehero {
     width: 100%;
     height: auto;
@@ -187,9 +172,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7rem;
-    max-height: none;
-    min-height: none;
+    gap: 5rem;
   }
 
   .background__image {
