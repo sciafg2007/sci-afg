@@ -1,0 +1,160 @@
+.prefooter {
+  padding: 7rem 0 !important;
+  width: 100%;
+}
+
+.pf__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.pr__images {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.images {
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.imgOne {
+  width: 29vw;
+  aspect-ratio: 330/450;
+}
+
+.imgTwo {
+  width: 18vw;
+  aspect-ratio: 250/310;
+}
+
+.imgThree {
+  width: 35vw;
+  aspect-ratio: 400/520;
+}
+
+.imgFour {
+  width: 18vw;
+  aspect-ratio: 250/380;
+}
+
+.pr__bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.pt__h1 {
+  font-weight: 200;
+  font-family: var(--lora-font);
+  font-size: calc(var(--70-font-size) + 0.75rem);
+  letter-spacing: -2%;
+  color: var(--darkblue);
+  line-height: 1.25;
+  width: 50%;
+}
+
+.prr__right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2.25rem;
+}
+
+.prr__p {
+  line-height: 1.35;
+}
+
+.prr__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+//Responsive Design
+@media screen and (max-width: 1350px) {
+  .pt__h1 {
+    font-weight: 200;
+    font-family: var(--lora-font);
+    font-size: calc(var(--70-font-size) - 0.2rem);
+    letter-spacing: -2%;
+    color: var(--darkblue);
+    line-height: 1.25;
+    width: 50%;
+  }
+
+  .pr__images {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .pr__bottom {
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .prr__right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .pr__bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .prr__right {
+    margin-top: 0rem;
+  }
+
+  .pt__h1 {
+    font-size: calc(var(--70-font-size));
+    width: 100%;
+  }
+
+  .prr__right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .imgTwo,
+  .imgFour {
+    display: none;
+  }
+
+  .imgOne {
+    width: 43vw;
+    aspect-ratio: 330/450;
+  }
+
+  .imgThree {
+    width: 57vw;
+    aspect-ratio: 400/520;
+  }
+
+  .pf__container {
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prr__buttons{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .
+}

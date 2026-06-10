@@ -1,0 +1,14 @@
+.sidebar {
+  position: fixed;
+  width: 100vw;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: var(--darkblue);
+  // clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  // min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

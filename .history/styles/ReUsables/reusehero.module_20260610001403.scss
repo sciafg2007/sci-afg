@@ -1,0 +1,69 @@
+.reusehero {
+  width: 100%;
+  height: auto;
+  padding: 12.5rem 0 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rh__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rh__h1 {
+  font-family: var(--lora-font);
+  font-weight: 300;
+  font-size: var(--70-font-size);
+  color: var(--darkblue);
+  width: 60%;
+  text-align: center;
+  letter-spacing: -3%;
+  line-height: 1.15;
+}
+
+.rh__p {
+  width: 50%;
+  text-align: center;
+  line-height: 1.35;
+}
+
+//Responsive Design
+@media screen and (max-width: 1200px) {
+  .rh__h1 {
+    font-size: var(--70-font-size);
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1088px) {
+  .rh__container {
+    gap: 1.75rem;
+  }
+
+  .rh__p {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .rh__h1 {
+    font-size: var(--70-font-size);
+    width: 90%;
+  }
+  .rh__p {
+    width: 75%;
+  }
+}
+
+
+@media screen and (max-width: 628px) {
+  .rh__h1 {
+    font-size: var(--70-font-size);
+    width: 100%;
+  }
+  .rh__p {
+    width: 85%;
+  }
+}

@@ -1,0 +1,53 @@
+.op__section {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0 7rem;
+}
+
+.op__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.opc__h3 {
+  font-weight: 200;
+  font-family: var(--lora-font);
+  font-size: var(--50-font-size);
+  letter-spacing: -2%;
+  color: var(--darkblue);
+  line-height: 1.15;
+}
+
+.opc__bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 2.25rem;
+}
+
+
+//Responsve Design
+@media screen and (max-width: 1088px) {
+  .opc__bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 2.25rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .opc__bottom {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .op__container {
+    gap: 3.5rem;
+  }
+  
+}
