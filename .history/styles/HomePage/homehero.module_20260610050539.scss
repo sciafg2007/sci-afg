@@ -166,14 +166,6 @@
     max-height: 900px;
     min-height: 700px;
   }
-
-  .background__image {
-  
-    img {
-      object-fit: cover;
-      object-position: 30% 50%
-    }
-  }
 }
 
 @media screen and (max-width: 390px) {
