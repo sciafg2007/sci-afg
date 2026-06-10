@@ -139,15 +139,16 @@
     font-size: calc(var(--70-font-size) + 0.2rem);
   }
 
+
   .hero__p {
     width: 95%;
   }
 
-  .hero__bottom {
+  .hero__bottom{
     bottom: 0.75rem;
   }
 
-  .hero__marquee {
+  .hero__marquee{
     padding: 0.2rem 0 0.65rem;
   }
 
@@ -164,12 +165,14 @@
     height: 110vh;
     position: relative;
     max-height: 900px;
-    min-height: 680px;
+    min-height: 720px;
   }
 }
+
 
 @media screen and (max-width: 390px) {
   .hero__h2 {
     font-size: calc(var(--70-font-size) - 0.2rem);
   }
+
 }
