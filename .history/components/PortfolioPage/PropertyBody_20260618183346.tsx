@@ -196,30 +196,32 @@ const PropertyBody = ({ property }: { property: PropertyProps }) => {
             </div>
           </div>
           <div className={styles.pbc__right}>
-            {property.price !== 0 && (
-              <div className={styles.pricinger}>
-                <div className={styles.pptop}>
-                  FCFA {NumberFormatter(property.price)}{" "}
-                  <span className={styles.spanner}>
-                    {currentLng === "en"
-                      ? property.rentpricing === "perday"
-                        ? "/night"
-                        : property.rentpricing === "perweek"
-                          ? "/week"
-                          : property.rentpricing === "permonth"
-                            ? "/month"
-                            : ""
-                      : property.rentpricing === "perday"
-                        ? "/nuit"
-                        : property.rentpricing === "perweek"
-                          ? "/semaine"
-                          : property.rentpricing === "permonth"
-                            ? "/mois"
-                            : ""}
-                  </span>
-                </div>
+            {
+              property.price!==0 
+            }
+            <div className={styles.pricinger}>
+              <div className={styles.pptop}>
+                FCFA {NumberFormatter(property.price)}{" "}
+                <span className={styles.spanner}>
+                  {currentLng === "en"
+                    ? property.rentpricing === "perday"
+                      ? "/night"
+                      : property.rentpricing === "perweek"
+                        ? "/week"
+                        : property.rentpricing === "permonth"
+                          ? "/month"
+                          : ""
+                    : property.rentpricing === "perday"
+                      ? "/nuit"
+                      : property.rentpricing === "perweek"
+                        ? "/semaine"
+                        : property.rentpricing === "permonth"
+                          ? "/mois"
+                          : ""}
+                </span>
               </div>
-            )}
+              
+            </div>
             <div className={styles.pbr__one}>
               <div className={styles.pcr__top}>
                 <div className={styles.pt__image}>
