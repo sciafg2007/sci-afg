@@ -437,11 +437,15 @@
   }
 
   .gallery__images {
-    margin-bottom: 12px;
-  }
 
+    margin-bottom: 20px;
+
+  }
+  
   .video__wrapper {
-    margin-bottom: 12px;
+    width: 100%;
+    aspect-ratio: 16/10;
+    margin-bottom: 20px;
   }
 }
 
