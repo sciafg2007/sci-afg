@@ -18,7 +18,7 @@ const Area = () => {
           width="16"
           height="16"
         >
-          <path d="M16 16H0V0H16V16Z" fill="#11284A" />
+          <path d="M16 16H0V0H16V16Z" fill="white" />
         </mask>
         <g mask="url(#mask0_71_1456)">
           <path
@@ -29,7 +29,7 @@ const Area = () => {
       </g>
       <defs>
         <clipPath id="clip0_71_1456">
-          <rect width="16" height="16" fill="#11284A" />
+          <rect width="16" height="16" fill="white" />
         </clipPath>
       </defs>
     </svg>

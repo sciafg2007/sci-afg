@@ -150,7 +150,7 @@ const ProjectBox = ({ projectDetails }: { projectDetails: PropertyProps }) => {
                       : projectDetails.rentpricing === "perweek"
                         ? "a week"
                         : projectDetails.rentpricing === "permonth"
-                          ? "a month"
+                          ? "/month"
                           : ""
                     : projectDetails.rentpricing === "perday"
                       ? "la nuit"

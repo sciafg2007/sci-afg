@@ -146,18 +146,18 @@ const ProjectBox = ({ projectDetails }: { projectDetails: PropertyProps }) => {
                   FCFA {NumberFormatter(projectDetails.price)}{" "}
                   {currentLocale === "en"
                     ? projectDetails.rentpricing === "perday"
-                      ? "a night"
+                      ? "/night"
                       : projectDetails.rentpricing === "perweek"
-                        ? "a week"
+                        ? "/week"
                         : projectDetails.rentpricing === "permonth"
-                          ? "a month"
+                          ? "/month"
                           : ""
                     : projectDetails.rentpricing === "perday"
-                      ? "la nuit"
+                      ? "/nuit"
                       : projectDetails.rentpricing === "perweek"
-                        ? "la semaine"
+                        ? "/semaine"
                         : projectDetails.rentpricing === "permonth"
-                          ? "le mois"
+                          ? "mois"
                           : ""}
                 </div>
                 <span className={styles.buttoner}></span>

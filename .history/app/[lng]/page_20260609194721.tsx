@@ -40,7 +40,7 @@ async function getPropertyType() {
 }
 
 async function getProperty() {
-  const query = `*[_type == "property" && available ] | order(_createdAt desc){
+  const query = `*[_type == "property" && available ] | order(_createdAt asc){
     _id,
 name,
   slug,
