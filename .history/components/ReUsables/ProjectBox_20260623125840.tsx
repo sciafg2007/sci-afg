@@ -121,7 +121,7 @@ const ProjectBox = ({ projectDetails }: { projectDetails: PropertyProps }) => {
         </div>
         <div className={styles.pbb__bottom}>
           <h4 className={styles.pb__h4}>{projectDetails.name}</h4>
-          {/* <div className={styles.pdbb}>
+          <div className={styles.pdbb}>
             {projectDetails.price !== 0 && (
               <>
                 <div className={styles.price}>
@@ -141,37 +141,6 @@ const ProjectBox = ({ projectDetails }: { projectDetails: PropertyProps }) => {
                         : projectDetails.rentpricing === "permonth"
                           ? "le mois"
                           : ""}
-                </div>
-                <span className={styles.buttoner}></span>
-              </>
-            )}
-            <div className={styles.location}>
-              {projectDetails.quarter}, {projectDetails.city.cityname}
-            </div>
-          </div> */}
-          <div className={styles.pdbb}>
-            {projectDetails.price !== 0 && (
-              <>
-                <div className={styles.price}>
-                  FCFA {NumberFormatter(projectDetails.price)}
-                  {"\u00A0"}
-                  <span className={styles.unit}>
-                    {currentLocale === "en"
-                      ? projectDetails.rentpricing === "perday"
-                        ? "a night"
-                        : projectDetails.rentpricing === "perweek"
-                          ? "a week"
-                          : projectDetails.rentpricing === "permonth"
-                            ? "a month"
-                            : ""
-                      : projectDetails.rentpricing === "perday"
-                        ? "la nuité"
-                        : projectDetails.rentpricing === "perweek"
-                          ? "la semaine"
-                          : projectDetails.rentpricing === "permonth"
-                            ? "le mois"
-                            : ""}
-                  </span>
                 </div>
                 <span className={styles.buttoner}></span>
               </>

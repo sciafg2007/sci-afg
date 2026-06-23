@@ -121,12 +121,14 @@
 .price {
   font-family: var(--lorabold-font);
   white-space: nowrap; /* keep everything on one line */
+  overflow: hidden; /* optional: hide overflow */
+  text-overflow: ellipsis; /* optional: show "…" when too long */
   display: inline-block; /* ensures nowrap applies reliably */
   max-width: 100%;
 }
 
 .price .unit {
-  white-space: nowrap; /* keep unit glued to the number */
+  white-space: nowrap;       /* keep unit glued to the number */
 }
 
 .location {

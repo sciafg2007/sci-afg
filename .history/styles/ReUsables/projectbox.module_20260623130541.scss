@@ -84,6 +84,10 @@
     svg {
       width: 18px;
       height: auto;
+
+      path{
+        fill: var(--darkblue)
+      }
     }
   }
 
@@ -126,7 +130,7 @@
 }
 
 .price .unit {
-  white-space: nowrap; /* keep unit glued to the number */
+  white-space: nowrap;       /* keep unit glued to the number */
 }
 
 .location {

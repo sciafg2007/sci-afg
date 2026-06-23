@@ -124,6 +124,24 @@ const ProjectBox = ({ projectDetails }: { projectDetails: PropertyProps }) => {
           {/* <div className={styles.pdbb}>
             {projectDetails.price !== 0 && (
               <>
+                {/* <div className={styles.price}>
+                  FCFA {NumberFormatter(projectDetails.price)}{" "}
+                  {currentLocale === "en"
+                    ? projectDetails.rentpricing === "perday"
+                      ? "per night"
+                      : projectDetails.rentpricing === "perweek"
+                        ? "per week"
+                        : projectDetails.rentpricing === "permonth"
+                          ? "per month"
+                          : ""
+                    : projectDetails.rentpricing === "perday"
+                      ? "par nuit"
+                      : projectDetails.rentpricing === "perweek"
+                        ? "par semaine"
+                        : projectDetails.rentpricing === "permonth"
+                          ? "par mois"
+                          : ""}
+                </div> */}
                 <div className={styles.price}>
                   FCFA {NumberFormatter(projectDetails.price)}{" "}
                   {currentLocale === "en"
@@ -149,37 +167,6 @@ const ProjectBox = ({ projectDetails }: { projectDetails: PropertyProps }) => {
               {projectDetails.quarter}, {projectDetails.city.cityname}
             </div>
           </div> */}
-          <div className={styles.pdbb}>
-            {projectDetails.price !== 0 && (
-              <>
-                <div className={styles.price}>
-                  FCFA {NumberFormatter(projectDetails.price)}
-                  {"\u00A0"}
-                  <span className={styles.unit}>
-                    {currentLocale === "en"
-                      ? projectDetails.rentpricing === "perday"
-                        ? "a night"
-                        : projectDetails.rentpricing === "perweek"
-                          ? "a week"
-                          : projectDetails.rentpricing === "permonth"
-                            ? "a month"
-                            : ""
-                      : projectDetails.rentpricing === "perday"
-                        ? "la nuité"
-                        : projectDetails.rentpricing === "perweek"
-                          ? "la semaine"
-                          : projectDetails.rentpricing === "permonth"
-                            ? "le mois"
-                            : ""}
-                  </span>
-                </div>
-                <span className={styles.buttoner}></span>
-              </>
-            )}
-            <div className={styles.location}>
-              {projectDetails.quarter}, {projectDetails.city.cityname}
-            </div>
-          </div>
         </div>
       </div>
     </Link>
