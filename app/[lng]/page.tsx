@@ -2,11 +2,6 @@ import Image from "next/image";
 import { client } from "@/sanity/lib/client";
 import { HomePageWrapper } from "@/components";
 
-// Generate static params for supported locales
-export async function generateStaticParams() {
-  return [{ lng: "en" }, { lng: "fr" }];
-}
-
 async function getTransactions() {
   const query = `*[_type == "transaction"] | order(_createdAt asc){
   nameen,

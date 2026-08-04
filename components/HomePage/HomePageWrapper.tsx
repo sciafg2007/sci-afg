@@ -13,6 +13,8 @@ import MarqueeClients from "./MarqueeClients";
 import Footer from "../Navigation/Footer";
 import { LocationsData, TransactionData } from "@/types";
 import ServicesSection from "../ServicesPage/ServicesSection";
+import VideoJS from "../ReUsables/VideoJS";
+import HomeVideo from "./HomeVideo";
 
 interface PropertyProps {
   _id: string;
@@ -91,6 +93,7 @@ const HomePageWrapper = ({
         scrollHeight={300}
       />
       <HomeHero />
+      <HomeVideo src="https://res.cloudinary.com/dl6xz3hu4/video/upload/v1785831368/video_qwo07r.mp4" />
       <QuickSearch
         transactions={transactions}
         locations={locations}
