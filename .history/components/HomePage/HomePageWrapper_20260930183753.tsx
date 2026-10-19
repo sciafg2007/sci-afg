@@ -93,12 +93,12 @@ const HomePageWrapper = ({
         scrollHeight={300}
       />
       <HomeHero />
+      {/* <HomeVideo src="https://res.cloudinary.com/dl6xz3hu4/video/upload/v1785831368/video_qwo07r.mp4" /> */}
       <QuickSearch
         transactions={transactions}
         locations={locations}
         propertytypes={propertytypes}
       />
-      <HomeVideo src="images/video.mp4" />
       <HomeProperties properties={properties} />
       <HomeAbout />
       <OurProcess />

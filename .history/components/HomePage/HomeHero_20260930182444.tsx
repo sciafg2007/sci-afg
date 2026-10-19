@@ -111,7 +111,7 @@ const HomeHero: React.FC = () => {
   return (
     <div className={styles.homehero}>
       <div className={styles.background__image}>
-        <CldImage alt="SCI AFG" fill src="SCI_AFG_5_sewngz.jpg" sizes="100vw" />
+        <CldImage alt="SCI AFG" fill src="SCI_AFG_5_sewngz.jpg" sizes="100vw" placeholder="blur" />
       </div>
 
       <div className={styles.hero__main}>
